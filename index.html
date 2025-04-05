@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oldenburg&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Form</title>
+  </head>
+  <body>
+    <main>
+      <section class="left">
+        <img src="assets/leaf.jpg" />
+        <div class="logoBackground">
+          <div class="content">
+            <img src="assets/odin-lined.png" class="logo" />
+            <h1>ODIN</h1>
+          </div>
+        </div>
+      </section>
+      <section class="right">
+        <div class="header">
+          <h1>
+            This is not a real online service!You know you need something like
+            this in your life to help you realize your deepest dreams.
+          </h1>
+          <h2>Sign up now to get started.</h2>
+          <h2>You know you want to</h2>
+        </div>
+        <div class="form">
+          <h2>Let`s do this!</h2>
+          <form action="#" method="POST">
+            <div class="container">
+              <div class="leftForm">
+                <label for="fistName">FIRST NAME</label>
+                <input type="text" id="firstName" name="firstName" required />
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required />
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div class="rightForm">
+                <label for="lastName">LAST NAME</label>
+                <input type="text" id="lastName" name="lastName" required />
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  required
+                />
+                <label for="confirmPassword">CONFIRM PASSWORD</label>
+                <input
+                  type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+          <div class="createAccount">
+            <button class="createAccountButton">Create Account</button>
+            <p>
+              Already have an account?<span><a href="#"> Log in </a> </span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

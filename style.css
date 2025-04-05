@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oldenburg', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+  display: flex;
+}
+
+.left img {
+  width: 30vw;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  display: flex;
+}
+.logoBackground {
+  background-color: rgba(22, 21, 21, 0.8);
+  position: relative;
+  width: 30vw;
+  height: 100px;
+  z-index: 999;
+  margin-top: 200px;
+}
+.logoBackground > * {
+  flex: 1;
+}
+.logoBackground h1 {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: white;
+  margin-left: 60px;
+}
+.logoBackground img {
+  width: 80px;
+  height: 80px;
+  margin-left: -160px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main .right {
+  width: 70vw;
+}
+.header {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #efefef;
+}
+.header > * {
+  width: 900px;
+  margin-left: 100px;
+}
+.header > *:nth-child(2) {
+  /* Add your styles here */
+  margin-bottom: 20px;
+}
+.header > *:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 0 100px;
+  margin: 30px 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 60px;
+}
+.form h2 {
+  margin-bottom: 20px;
+}
+.leftForm,
+.rightForm {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.form input {
+  width: 100%;
+  height: 29px;
+  border-radius: 2.5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+.createAccount {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.createAccount button {
+  background-color: #596d48;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  width: 80%;
+}
+.createAccount button:hover {
+  background-color: #4a5b3a;
+}
+
+.createAccount p span a {
+  text-align: center;
+  color: #596d48;
+  text-decoration: none;
+}
+#password,
+#confirmPassword {
+  width: 100%;
+  height: 29px;
+  border-radius: 2.5px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+}
+
+#password:invalid,
+#confirmPassword:invalid {
+  border-color: red;
+}
